@@ -13,6 +13,17 @@ class Login extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Cats App'),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: <Color>[Colors.blue, Colors.purple])),
+          ),
+        ),
         backgroundColor: Colors.white,
         body: Center(
           child: Column(
